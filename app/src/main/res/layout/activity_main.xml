@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="@string/headerMain"
+        android:id="@+id/textView"
+        android:background="#4f81b6"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/vk_share_title_text_size"
+        android:textAlignment="center"
+        android:fontFamily="@string/vk_name"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        android:id="@+id/listView"
+        android:layout_weight="0.98"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+    <Button
+        android:layout_width="582dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonAddAll"
+        android:id="@+id/button"
+        android:background="@color/vk_share_top_blue_color"
+        android:textColor="#ffffff"
+        android:layout_margin="3sp"
+        android:padding="3sp"
+        android:layout_gravity="center_horizontal"
+        android:nestedScrollingEnabled="false" />
+
+</LinearLayout>
